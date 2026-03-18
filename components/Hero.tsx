@@ -43,17 +43,18 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Link
+            <a
               className="border border-[#dedede] rounded-xl px-5 py-1.25 font-medium flex items-center gap-2
             bg-white/70 backdrop-blur-[10px] drop-shadow-foreground drop-shadow-xl/20 text-black
             transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-105
             xl:text-[14px] xl:px-3.5 xl:py-2"
               href="https://github.com/eng-kerolos-adel/Developer-OS-App-Download/releases/download/v1.0/Developer-OS.apk"
               download
+              target="_blank"
             >
               <Download className="text-[22px] xl:text-[18px]" />
               <span className="text-lg">Download Now</span>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </motion.div>
