@@ -49,7 +49,7 @@ const Features = () => {
                   {feature.description}
                 </p>
                 <motion.div
-                  className="relative w-full aspect-9/19 mt-10 overflow-hidden shadow-xl lg:w-[80%]"
+                  className="relative w-full aspect-9/19 mt-10 overflow-hidden lg:w-[80%]"
                   initial={{ y: 20, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ delay: index * 0.1 + 0.3 }}
