@@ -76,3 +76,46 @@ export const features = [
     image: "/projects.png",
   },
 ];
+
+export const steps = [
+  {
+    number: "1",
+    title: "Step 1",
+    image: "/1.png",
+  },
+  {
+    number: "2",
+    title: "Step 2",
+    image: "/2.png",
+  },
+  {
+    number: "3",
+    title: "Step 3",
+    image: "/3.png",
+  },
+  {
+    number: "4",
+    title: "Step 4",
+    image: "/4.png",
+  },
+  {
+    number: "5",
+    title: "Step 5",
+    image: "/5.png",
+  },
+  {
+    number: "6",
+    title: "Step 6",
+    image: "/6.png",
+  },
+  {
+    number: "7",
+    title: "Step 7",
+    image: "/7.png",
+  },
+  {
+    number: "8",
+    title: "Step 8",
+    image: "/8.png",
+  },
+];

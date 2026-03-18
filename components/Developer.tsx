@@ -43,7 +43,7 @@ const Developer = () => {
               alt="profile"
               width={400}
               height={400}
-              className="h-full w-full lg:max-w-100 lg:max-h-100 max-[767px]:w-full max-[767px]:h-auto relative object-cover rounded-3xl hover:scale-105 transition-transform duration-300"
+              className="h-full w-full drop-shadow-foreground drop-shadow-xl/50 lg:max-w-100 lg:max-h-100 max-[767px]:w-full max-[767px]:h-auto relative object-cover rounded-3xl hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
 

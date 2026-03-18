@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Developer from "@/components/Developer";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
+import Steps from "@/components/Steps";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <BackToTop />
       <Navbar />
       <Hero />
+      <Steps />
       <Features />
       <Developer />
       <Footer />

@@ -1,12 +1,12 @@
 "use client";
 
-import { features } from "@/lib";
+import { steps } from "@/lib";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Features = () => {
+const Steps = () => {
   return (
-    <section id="features" className="px-6 py-10 bg-transparent">
+    <section id="steps" className="px-6 py-10 bg-transparent">
       <div className="bg-transparent h-full rounded-3xl flex flex-col flex-nowrap">
         <motion.div
           className="w-full flex justify-center items-center mb-12"
@@ -16,49 +16,42 @@ const Features = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-5xl font-black text-foreground px-6">
-            Our Features
+            How to Install
           </h2>
         </motion.div>
 
         <motion.div
-          className="flex gap-4 items-start justify-center flex-wrap"
+          className="flex gap-4 items-center justify-center flex-wrap"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          {features.map((feature, index) => {
-            const IconComponent = feature.icon;
+          {steps.map((step, index) => {
             return (
               <motion.div
-                key={feature.title}
-                className="bg-transparent p-6 md:p-8 w-full sm:w-[48%] lg:w-[18%] "
+                key={step.title}
+                className="bg-transparent p-6 md:p-8 w-full sm:w-[48%] lg:w-[20%] flex flex-col justify-center items-center"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
                 <motion.div
-                  className="text-[28px] w-min md:text-[38px] drop-shadow-foreground drop-shadow-xl/20 border border-foreground rounded-lg p-2.5 bg-white/70 backdrop-blur-[10px] text-foreground"
+                  className="drop-shadow-foreground text-2xl h-12 flex items-center justify-center drop-shadow-xl/20 border border-foreground rounded-lg p-2.5 bg-white/70 backdrop-blur-[10px] text-foreground"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
-                  <IconComponent />
+                  Step {step.number}
                 </motion.div>
-                <h1 className="block my-6 text-foreground text-xl">
-                  {feature.title}
-                </h1>
-                <p className="text-foreground text-base leading-6">
-                  {feature.description}
-                </p>
                 <motion.div
-                  className="relative w-full self-center aspect-9/19 mt-10 drop-shadow-foreground drop-shadow-xl/50 overflow-hidden lg:w-[80%]"
+                  className="relative w-full aspect-9/19 mt-4 drop-shadow-foreground drop-shadow-xl/50 overflow-hidden lg:w-[80%]"
                   initial={{ y: 20, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ delay: index * 0.1 + 0.3 }}
                 >
                   <img
-                    src={feature.image}
-                    alt={feature.title}
+                    src={step.image}
+                    alt={step.title}
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -71,4 +64,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Steps;
