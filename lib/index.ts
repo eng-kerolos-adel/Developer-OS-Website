@@ -12,6 +12,7 @@ import {
 
 export const navLinks = [
   { href: "#hero", label: "Home" },
+  { href: "#steps", label: "Install-Steps" },
   { href: "#features", label: "Features" },
   { href: "#developer", label: "Developer" },
 ];
