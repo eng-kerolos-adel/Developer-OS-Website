@@ -48,8 +48,8 @@ const Hero = () => {
             bg-white/70 backdrop-blur-[10px] drop-shadow-foreground drop-shadow-xl/20 text-black
             transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-105
             xl:text-[14px] xl:px-3.5 xl:py-2"
-              href="/app/Developer-OS.apk"
-              download="Developer-OS"
+              href="https://github.com/eng-kerolos-adel/Developer-OS-App-Download/releases/download/v1.0/Developer-OS.apk"
+              download
             >
               <Download className="text-[22px] xl:text-[18px]" />
               <span className="text-lg">Download Now</span>
