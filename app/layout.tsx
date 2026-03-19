@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import CustomCursor from "@/components/CustomCursor";
 
+
 export const metadata: Metadata = {
   title: "Developer OS | Your Coding Life, Organized",
   description:
@@ -70,10 +71,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://developer-os.vercel.app",
+    url: "https://developer-os-website.vercel.app",
     title: "Developer OS | Your Coding Life, Organized",
     description:
-      "المنصة المتكاملة لتنظيم حياة المبرمجين، حل المشكلات البرمجية، وزيادة الإنتاجية. رتب مهامك، أكوادك، ومسيرتك المهنية في مكان واحد.",
+      "Developer OS: The ultimate productivity workspace designed for software engineers. Manage your coding workflow, track projects, and solve programming challenges in one place.",
     siteName: "Developer OS",
     images: [
       {
@@ -118,9 +119,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="shortcut icon" href="./logo.ico" type="image/x-icon" />
-      </head>
       <body>
         <SpeedInsights />
         <Analytics />

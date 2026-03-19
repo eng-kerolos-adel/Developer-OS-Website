@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // enything
+  output: "export"
 };
 
 export default nextConfig;
