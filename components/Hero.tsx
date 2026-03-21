@@ -38,7 +38,7 @@ const Hero = () => {
           </motion.p>
           <motion.div
             className="flex gap-6
-          md:justify-center"
+          md:justify-center flex-col md:flex-row"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
