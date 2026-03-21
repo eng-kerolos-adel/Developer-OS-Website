@@ -52,9 +52,9 @@ const Hero = () => {
               download
             >
               <Download className="text-[22px] xl:text-[18px]" />
-              <span className="text-lg">
+              <span className="md:text-lg">
                 Download Now{" "}
-                <span className="text-red-500 text-sm font-bold">
+                <span className="text-red-500 text-xs md:text-sm font-bold">
                   (Android Only)
                 </span>
               </span>
@@ -68,9 +68,9 @@ const Hero = () => {
               target="_blank"
             >
               <ExternalLink className="text-[22px] xl:text-[18px]" />
-              <span className="text-lg">
+              <span className="md:text-lg">
                 Use Web Version{" "}
-                <span className="text-red-500 text-sm font-bold">
+                <span className="text-red-500 text-xs md:text-sm font-bold">
                   (iOS & Android)
                 </span>
               </span>

@@ -18,7 +18,7 @@ const Steps = () => {
           <h2 className="text-5xl font-black text-foreground px-6 text-center">
             How to Install
             <br />
-            <span className="text-lg font-black text-red-500 px-6 text-center">
+            <span className="text-base font-black text-red-500 px-6 mt-5 text-center line-clamp-3">
               Important Tip: Enable Install Unknown Apps First
             </span>
           </h2>
