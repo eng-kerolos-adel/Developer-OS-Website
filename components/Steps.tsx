@@ -15,8 +15,12 @@ const Steps = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl font-black text-foreground px-6">
+          <h2 className="text-5xl font-black text-foreground px-6 text-center">
             How to Install
+            <br />
+            <span className="text-lg font-black text-red-500 px-6 text-center">
+              Important Tip: Enable Install Unknown Apps First
+            </span>
           </h2>
         </motion.div>
 

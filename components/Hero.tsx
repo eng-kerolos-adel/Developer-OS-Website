@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -37,7 +37,7 @@ const Hero = () => {
             Professional Tools For Developers
           </motion.p>
           <motion.div
-            className="flex gap-2
+            className="flex gap-6
           md:justify-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,28 @@ const Hero = () => {
               download
             >
               <Download className="text-[22px] xl:text-[18px]" />
-              <span className="text-lg">Download Now</span>
+              <span className="text-lg">
+                Download Now{" "}
+                <span className="text-red-500 text-sm font-bold">
+                  (Android Only)
+                </span>
+              </span>
+            </a>
+            <a
+              className="border border-[#dedede] rounded-xl px-5 py-1.25 font-medium flex items-center gap-2
+            bg-white/70 backdrop-blur-[10px] drop-shadow-foreground drop-shadow-xl/20 text-black
+            transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-105
+            xl:text-[14px] xl:px-3.5 xl:py-2"
+              href="https://developer-os.web.app"
+              target="_blank"
+            >
+              <ExternalLink className="text-[22px] xl:text-[18px]" />
+              <span className="text-lg">
+                Use Web Version{" "}
+                <span className="text-red-500 text-sm font-bold">
+                  (iOS & Android)
+                </span>
+              </span>
             </a>
           </motion.div>
         </div>
