@@ -205,6 +205,16 @@ html {
   animation: fadeIn 0.3s ease;
 }
 
-body {
+.main {
   cursor: none;
+}
+
+@theme {
+  --font-heading: 'Syne', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-noir-bg: #000000;
+  --color-noir-card: #0A0A0A;
+  --color-noir-border: #262626;
+  --color-noir-muted: #737373;
+  --color-noir-accent: #ffffff;
 }

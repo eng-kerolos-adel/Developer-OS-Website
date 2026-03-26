@@ -33,10 +33,10 @@ const Navbar = () => {
   return (
     <nav
       className={`group flex items-center justify-between md:gap-8 md:flex-row flex-col
-    left-1/2 -translate-x-1/2 border border-border fixed 
+    left-1/2 -translate-x-1/2 fixed 
     bg-white/70 backdrop-blur-[10px]
     bottom-6 lg:top-4 lg:bottom-auto rounded-2xl p-3 z-99999999
-    overflow-hidden transition-[max-height] duration-500 ease-in-out drop-shadow-foreground drop-shadow-xl/20
+    overflow-hidden transition-[max-height] duration-500 ease-in-out border border-border drop-shadow-foreground drop-shadow-xl/20
     ${!isLargeScreen && isNavOpen ? "nav-show max-h-125 gap-4" : "max-h-25"}`}
     >
       <div className="flex items-center gap-2.5">

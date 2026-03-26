@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <motion.footer
-      className="bg-white/70 backdrop-blur-[10px] border-t-2 border-muted-foreground text-foreground rounded-t-3xl pb-30 md:pb-auto px-6 md:px-8 lg:px-12 py-6 md:py-8 flex items-center justify-center gap-5 md:gap-8"
+      className="bg-white/70 backdrop-blur-[10px] border-t-2 border-muted-foreground text-foreground rounded-t-3xl pb-30 md:pb-auto px-6 md:px-8 lg:px-12 py-6 relative bottom-0 md:py-8 flex items-center justify-center gap-5 md:gap-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}

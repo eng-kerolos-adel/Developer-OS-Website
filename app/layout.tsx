@@ -3,7 +3,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import CustomCursor from "@/components/CustomCursor";
+import { GridBackground } from "@/components/grid-background";
+import Navbar from "@/components/Navbar";
 
 
 export const metadata: Metadata = {
@@ -128,7 +129,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CustomCursor />
+          <GridBackground />
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
