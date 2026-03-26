@@ -72,7 +72,7 @@ const DownloadsPage = () => {
                 <Card
                   className={`group relative h-full bg-white/70 backdrop-blur-[10px] border border-border transition-all duration-500  ${item.recommended ? "ring-1 ring-white/10" : ""}`}
                 >
-                  <CardContent className="flex flex-col aspect-10/14 md:aspect-square p-8 justify-between">
+                  <CardContent className="flex flex-col aspect-10/14 md:aspect-square px-8 justify-between">
                     {/* Top Info */}
                     <div className="flex justify-between items-start">
                       <div
