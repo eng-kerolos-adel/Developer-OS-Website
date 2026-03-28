@@ -11,25 +11,25 @@ import { Cpu, Smartphone, Globe, Download, Layers } from "lucide-react";
 
 const downloadOptions = [
   {
+    id: "modern",
+    title: "Modern Android",
+    arch: "arm64-v8a",
+    description: "64-bit high-performance build for modern flagship devices.",
+    size: "32.4 MB",
+    icon: Cpu,
+    recommended: true,
+    url: "/app/Developer-OS-arm64-v8a.apk",
+  },
+  {
     id: "legacy",
     title: "Old Android",
     arch: "arm-v7a",
     description:
       "32-bit build optimized for older smartphones and legacy systems.",
-    size: "31.4 MB",
+    size: "30.7 MB",
     icon: Smartphone,
     recommended: false,
     url: "/app/Developer-OS-arm-v7a.apk",
-  },
-  {
-    id: "modern",
-    title: "Modern Android",
-    arch: "arm64-v8a",
-    description: "64-bit high-performance build for modern flagship devices.",
-    size: "33.2 MB",
-    icon: Cpu,
-    recommended: true,
-    url: "/app/Developer-OS-arm64-v8a.apk",
   },
   {
     id: "emulator",
@@ -37,7 +37,7 @@ const downloadOptions = [
     arch: "x86_64",
     description:
       "Specialized build for Chromebooks, Tablets, and Android Emulators.",
-    size: "34.6 MB",
+    size: "33.8 MB",
     icon: Globe,
     recommended: false,
     url: "/app/Developer-OS-x86_64.apk",
@@ -108,7 +108,6 @@ const DownloadsPage = () => {
                     <div className="space-y-6">
                       <div className="flex justify-between items-center font-mono text-sm text-muted-foreground border-t border-muted-foreground pt-4">
                         <span>PAYLOAD: {item.size}</span>
-                        <span>STATUS: STABLE</span>
                       </div>
                       <a
                         href={item.url}
